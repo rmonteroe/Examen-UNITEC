@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Unitec_TestModelStoreContainer" CdmEntityContainer="Unitec_TestEntities">
+    <EntitySetMapping Name="AgendaUnitec">
+      <EntityTypeMapping TypeName="Unitec_TestModel.AgendaUnitec">
+        <MappingFragment StoreEntitySet="AgendaUnitec">
+          <ScalarProperty Name="Empresa" ColumnName="Empresa" />
+          <ScalarProperty Name="AliasUnitec" ColumnName="AliasUnitec" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdAgenda" ColumnName="IdAgenda" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
