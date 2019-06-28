@@ -1,0 +1,23 @@
+<div  class="col-lg-12" >
+	<h3>{{titulo}}</h3>
+	<hr>
+
+<div *ngIf="!contactos">
+Cargando listado de contactos...
+</div>
+	<div *ngIf="contactos">
+		<div class="row">
+			<div  *ngFor="let contacto of contactos; let i = index">
+				<ul>
+
+					<li><strong>Nombre:</strong> {{contacto.Nombre}} </li>
+					<li><strong>Telefono:</strong> {{contacto.Telefono}}</li>
+					<li><strong>Descripcion:</strong> {{contacto.Descripcion}} </li>
+					<li><strong>Alias Unitec:</strong> {{contacto.AliasUnitec}}</li>
+					<li><strong>Empresa:</strong> {{contacto.Empresa}} </li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

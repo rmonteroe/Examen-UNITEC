@@ -1,0 +1,27 @@
+<div id="Content" class="container" >
+	<header id="header" class="row justify-content-start"
+	 [style.background]="header_color">
+		<h1>{{title}}</h1>
+	</header>
+
+	<nav id="nav" class="row justify-content-start" >
+		<ul>
+			<li><a [routerLinkActive]="['activado']" [routerLink]="['/home']" >Home</a></li>
+			<li><a [routerLinkActive]="['activado']" [routerLink]="['/contactosList']" >Contactos</a></li>
+			<li><a [routerLinkActive]="['activado']" [routerLink]="['/contactosAdd']" >Crear Contactos</a></li>
+		</ul>
+	</nav>
+
+	<section id="main" class="row justify-content-start" >
+		<router-outlet></router-outlet>
+	</section>
+
+	<footer id="footer" class="row justify-content-start" >
+		<p>angular 7 Richy</p>
+	</footer>
+
+</div>
+
+
+
+

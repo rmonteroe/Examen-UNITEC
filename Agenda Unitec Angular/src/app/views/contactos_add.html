@@ -1,0 +1,61 @@
+<div  class="col-lg-12" >
+        <h3>{{titulo}}</h3>
+        
+        <hr>
+        
+        <div>
+            <form #formContacto="ngForm" id="formContacto" (ngSubmit)="onSubmit(); formContacto.reset();">
+            <p>
+                <label>
+                    Nombre:
+
+                </label>
+        
+                <input type="text" class="form-control" name="Nombre" #nombre="ngModel" [(ngModel)]="contacto.Nombre" required>
+        
+            </p>
+
+            <p>
+                <label>
+                    Telefono:
+
+                </label>
+                <textarea type="text" class="form-control"  name="Telefono" #Telefono="ngModel" [(ngModel)]="contacto.Telefono" required ></textarea>
+            
+            </p>
+        
+            <p>
+                <label>
+                        Descripcion:
+
+                </label>
+                <textarea type="text" class="form-control"  name="Descripcion" #Description="ngModel" [(ngModel)]="contacto.Descripcion" required ></textarea>
+        
+            </p>
+        
+            
+            <p>
+                    <label>
+                            AliasUnitec:
+
+                    </label>
+                    <input type="text" class="form-control"  name="AliasUnitec" #AliasUnitec="ngModel" [(ngModel)]="contacto.AliasUnitec" >
+            
+                </p>
+                <p>
+                        <label>
+                                Empresa:
+             
+                     
+                        </label>
+                        <input type="text" class="form-control"  name="Empresa" #Empresa="ngModel" [(ngModel)]="contacto.Empresa"  >
+                
+                    </p>
+        
+               <input type="submit" class="btn btn-success" value="{{titulo}}" [disabled]="!formContacto.form.valid">
+            </form>
+        </div>
+        
+        
+        </div>
+        
